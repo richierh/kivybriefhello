@@ -1,30 +1,31 @@
 
 name: Build
-on:
-name: Build
-on:
-  push:
+on: [push, pull_request]
 
 jobs:
-# Build job. Builds afeel pp for Android with Buildozer
-build-android:
-  name: Build for Android
-  runs-on: ubuntu-latest
+  # Build job. Builds app for Android with Buildozer
+  build-android:
+    name: Build for Android
+    runs-on: ubuntu-latest
 
-  steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
 
-    - name: Build with Buildozer
-      uses: ArtemSBulgakov/buildozer-action@v1
-      id: buildozer
-      with:
-        workdir: <specify the directory of the app no don't mention this the app files are in root directory>
-        buildozer_version: stable
+      - name: Build with Buildozer
+        uses: ArtemSBulgakov/buildozer-action@v1
+        id: buildozer
+        with:
+          workdir: .
+          buildozer_version: stable
+          command : buildozer android debug
+        
+        env:
+         # APP_ANDROID_ARCH: x86
+#           APP_TITLE: Halo Semua
 
-    - name: Upload artifacts
-      uses: actions/upload-artifact@v2
-      with:
-        name: package
-        path: ${{ steps.buildozer.outputs.filename }}
-view rawkivy_workflow.yml hosted with ❤ by GitHub
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: package
+          path: ${{ steps.buildozer.outputs
