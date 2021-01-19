@@ -18,3 +18,4 @@ def main():
     # This should start and launch your app!
     ap = MyApp()
     ap.run()
+main()
