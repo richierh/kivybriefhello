@@ -1,4 +1,3 @@
-
 name: Build
 on: [push, pull_request]
 
@@ -16,7 +15,7 @@ jobs:
         uses: ArtemSBulgakov/buildozer-action@v1
         id: buildozer
         with:
-          workdir: .
+          workdir:.
           buildozer_version: stable
           command : buildozer android debug
         
