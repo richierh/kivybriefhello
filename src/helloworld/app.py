@@ -9,8 +9,10 @@ from kivy.app import App
 from kivy.uix.widget import Widget
 
 class MyApp(App):
-	def build(self):
-		return Widget()
+
+    def build(self):
+        return Label(text='Hello world')
+
 def main():
     # This should start and launch your app!
     ap = MyApp()
