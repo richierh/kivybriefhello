@@ -83,7 +83,7 @@ osx.kivy_version = 1.9.1
 fullscreen = 0
 
 # (string) Presplash background color (for new android toolchain)
-=======
+
 # (string) Presplash background color (for android toolchain)
 # Supported formats are: #RRGGBB #AARRGGBB or one of the following names:
 # red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray,
@@ -109,7 +109,7 @@ android.ndk = 19c
 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
 android.ndk_api = 21
-=======
+
 # (string) Presplash animation using Lottie format.
 # see https://lottiefiles.com/ for examples and https://airbnb.design/lottie/
 # for general documentation.
@@ -136,7 +136,7 @@ android.ndk_api = 21
 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
 #android.ndk_api = 21
->>>
+
 
 
 
@@ -278,7 +278,6 @@ android.arch = armeabi-v7a
 # android.numeric_version = 1
 
 
-=======
 # (bool) enables Android auto backup feature (Android API >=23)
 android.allow_backup = True
 
@@ -343,8 +342,6 @@ ios.kivy_ios_branch = master
 ios.ios_deploy_url = https://github.com/phonegap/ios-deploy
 
 ios.ios_deploy_branch = 1.7.0
-=======
-ios.ios_deploy_branch = 1.10.0
 
 # (bool) Whether or not to sign the code
 ios.codesign.allowed = false
