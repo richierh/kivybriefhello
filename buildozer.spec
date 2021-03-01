@@ -3,7 +3,7 @@
 # (str) Title of your application
 
 title = ApplicationWebview
-=======
+
 
 # (str) Package name
 package.name = myapp
@@ -316,7 +316,7 @@ android.allow_backup = True
 #p4a.port =
 
 
-=======
+
 # Control passing the --use-setup-py vs --ignore-setup-py to p4a
 # "in the future" --use-setup-py is going to be the default behaviour in p4a, right now it is not
 # Setting this to false will pass --ignore-setup-py, true will pass --use-setup-py
