@@ -1,7 +1,11 @@
 [app]
 
 # (str) Title of your application
+<<<<<<< HEAD
+title = ApplicationWebview
+=======
 title = My Application
+>>>>>>> 8d067adef7c052680413e8d1ed3c476c4efec361
 
 # (str) Package name
 package.name = myapp
@@ -22,7 +26,11 @@ source.include_exts = py,png,jpg,kv,atlas
 #source.exclude_exts = spec
 
 # (list) List of directory to exclude (let empty to not exclude anything)
+<<<<<<< HEAD
+#source.exclude_dirs = tests, bin
+=======
 #source.exclude_dirs = tests, bin, venv
+>>>>>>> 8d067adef7c052680413e8d1ed3c476c4efec361
 
 # (list) List of exclusions using pattern matching
 #source.exclude_patterns = license,images/*/*.jpg
@@ -36,12 +44,23 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
+<<<<<<< HEAD
+requirements =python3,kivy==2.0.0,https://github.com/kivymd/KivyMD/archive/master.zip,pygments,sdl2_ttf==2.0.15,pillow,webview-android
+
+=======
 requirements = python3,kivy
+>>>>>>> 8d067adef7c052680413e8d1ed3c476c4efec361
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
 
+<<<<<<< HEAD
+# (list) Garden requirements
+#garden_requirements =
+
+=======
+>>>>>>> 8d067adef7c052680413e8d1ed3c476c4efec361
 # (str) Presplash of the application
 #presplash.filename = %(source.dir)s/data/presplash.png
 
@@ -74,13 +93,36 @@ osx.kivy_version = 1.9.1
 # (bool) Indicate if the application should be fullscreen or not
 fullscreen = 0
 
+<<<<<<< HEAD
+# (string) Presplash background color (for new android toolchain)
+=======
 # (string) Presplash background color (for android toolchain)
+>>>>>>> 8d067adef7c052680413e8d1ed3c476c4efec361
 # Supported formats are: #RRGGBB #AARRGGBB or one of the following names:
 # red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray,
 # darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy,
 # olive, purple, silver, teal.
 #android.presplash_color = #FFFFFF
 
+<<<<<<< HEAD
+# (list) Permissions
+android.permissions = INTERNET
+
+# (int) Target Android API, should be as high as possible.
+android.api = 27
+
+# (int) Minimum API your APK will support.
+android.minapi = 21
+
+# (int) Android SDK version to use
+android.sdk = 20
+
+# (str) Android NDK version to use
+android.ndk = 19c
+
+# (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
+android.ndk_api = 21
+=======
 # (string) Presplash animation using Lottie format.
 # see https://lottiefiles.com/ for examples and https://airbnb.design/lottie/
 # for general documentation.
@@ -107,6 +149,7 @@ fullscreen = 0
 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
 #android.ndk_api = 21
+>>>>>>> 8d067adef7c052680413e8d1ed3c476c4efec361
 
 # (bool) Use --private data storage (True) or --dir public storage (False)
 #android.private_storage = True
@@ -156,10 +199,19 @@ android.accept_sdk_license = True
 # directory containing the files)
 #android.add_src =
 
+<<<<<<< HEAD
+# (list) Android AAR archives to add (currently works only with sdl2_gradle
+# bootstrap)
+#android.add_aars =
+
+# (list) Gradle dependencies to add (currently works only with sdl2_gradle
+# bootstrap)
+=======
 # (list) Android AAR archives to add
 #android.add_aars =
 
 # (list) Gradle dependencies to add
+>>>>>>> 8d067adef7c052680413e8d1ed3c476c4efec361
 #android.gradle_dependencies =
 
 # (list) add java compile options
@@ -177,7 +229,11 @@ android.accept_sdk_license = True
 # can be necessary to solve conflicts in gradle_dependencies
 # please enclose in double quotes 
 # e.g. android.add_packaging_options = "exclude 'META-INF/common.kotlin_module'", "exclude 'META-INF/*.kotlin_module'"
+<<<<<<< HEAD
+#android.add_gradle_repositories =
+=======
 #android.add_packaging_options =
+>>>>>>> 8d067adef7c052680413e8d1ed3c476c4efec361
 
 # (list) Java classes to add as activities to the manifest.
 #android.add_activities = com.example.ExampleActivity
@@ -217,10 +273,14 @@ android.accept_sdk_license = True
 #android.uses_library =
 
 # (str) Android logcat filters to use
+<<<<<<< HEAD
+android.logcat_filters = *:S python:D
+=======
 #android.logcat_filters = *:S python:D
 
 # (str) Android additional adb arguments
 #android.adb_args = -H host.docker.internal
+>>>>>>> 8d067adef7c052680413e8d1ed3c476c4efec361
 
 # (bool) Copy library instead of making a libpymodules.so
 #android.copy_libs = 1
@@ -232,6 +292,8 @@ android.arch = armeabi-v7a
 # this is not the same as app version and should only be edited if you know what you're doing
 # android.numeric_version = 1
 
+<<<<<<< HEAD
+=======
 # (bool) enables Android auto backup feature (Android API >=23)
 android.allow_backup = True
 
@@ -244,6 +306,7 @@ android.allow_backup = True
 # Usage example : android.manifest_placeholders = [myCustomUrl:\"org.kivy.customurl\"]
 # android.manifest_placeholders = [:]
 
+>>>>>>> 8d067adef7c052680413e8d1ed3c476c4efec361
 #
 # Python for android (p4a) specific
 #
@@ -269,6 +332,8 @@ android.allow_backup = True
 # (int) port number to specify an explicit --port= p4a argument (eg for bootstrap flask)
 #p4a.port =
 
+<<<<<<< HEAD
+=======
 # Control passing the --use-setup-py vs --ignore-setup-py to p4a
 # "in the future" --use-setup-py is going to be the default behaviour in p4a, right now it is not
 # Setting this to false will pass --ignore-setup-py, true will pass --use-setup-py
@@ -276,6 +341,7 @@ android.allow_backup = True
 # setup.py if you're using Poetry, but you need to add "toml" to source.include_exts.
 #p4a.setup_py = false
 
+>>>>>>> 8d067adef7c052680413e8d1ed3c476c4efec361
 
 #
 # iOS specific
@@ -292,10 +358,14 @@ ios.kivy_ios_branch = master
 #ios.ios_deploy_dir = ../ios_deploy
 # Or specify URL and branch
 ios.ios_deploy_url = https://github.com/phonegap/ios-deploy
+<<<<<<< HEAD
+ios.ios_deploy_branch = 1.7.0
+=======
 ios.ios_deploy_branch = 1.10.0
 
 # (bool) Whether or not to sign the code
 ios.codesign.allowed = false
+>>>>>>> 8d067adef7c052680413e8d1ed3c476c4efec361
 
 # (str) Name of the certificate to use for signing the debug version
 # Get a list of available identities: buildozer ios list_identities
