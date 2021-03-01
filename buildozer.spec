@@ -4,8 +4,6 @@
 <<<<<<< HEAD
 title = ApplicationWebview
 =======
-title = My Application
->>>>>>> 8d067adef7c052680413e8d1ed3c476c4efec361
 
 # (str) Package name
 package.name = myapp
@@ -48,7 +46,7 @@ version = 0.1
 requirements =python3,kivy==2.0.0,https://github.com/kivymd/KivyMD/archive/master.zip,pygments,sdl2_ttf==2.0.15,pillow,webview-android
 
 =======
-requirements = python3,kivy
+#requirements = python3,kivy
 >>>>>>> 8d067adef7c052680413e8d1ed3c476c4efec361
 
 # (str) Custom source folders for requirements
@@ -104,7 +102,7 @@ fullscreen = 0
 # olive, purple, silver, teal.
 #android.presplash_color = #FFFFFF
 
-<<<<<<< HEAD
+
 # (list) Permissions
 android.permissions = INTERNET
 
@@ -199,19 +197,19 @@ android.accept_sdk_license = True
 # directory containing the files)
 #android.add_src =
 
-<<<<<<< HEAD
+
 # (list) Android AAR archives to add (currently works only with sdl2_gradle
 # bootstrap)
 #android.add_aars =
 
 # (list) Gradle dependencies to add (currently works only with sdl2_gradle
 # bootstrap)
-=======
+
 # (list) Android AAR archives to add
 #android.add_aars =
 
 # (list) Gradle dependencies to add
->>>>>>> 8d067adef7c052680413e8d1ed3c476c4efec361
+
 #android.gradle_dependencies =
 
 # (list) add java compile options
@@ -229,11 +227,10 @@ android.accept_sdk_license = True
 # can be necessary to solve conflicts in gradle_dependencies
 # please enclose in double quotes 
 # e.g. android.add_packaging_options = "exclude 'META-INF/common.kotlin_module'", "exclude 'META-INF/*.kotlin_module'"
-<<<<<<< HEAD
+
 #android.add_gradle_repositories =
-=======
+
 #android.add_packaging_options =
->>>>>>> 8d067adef7c052680413e8d1ed3c476c4efec361
 
 # (list) Java classes to add as activities to the manifest.
 #android.add_activities = com.example.ExampleActivity
@@ -273,14 +270,11 @@ android.accept_sdk_license = True
 #android.uses_library =
 
 # (str) Android logcat filters to use
-<<<<<<< HEAD
 android.logcat_filters = *:S python:D
-=======
 #android.logcat_filters = *:S python:D
 
 # (str) Android additional adb arguments
 #android.adb_args = -H host.docker.internal
->>>>>>> 8d067adef7c052680413e8d1ed3c476c4efec361
 
 # (bool) Copy library instead of making a libpymodules.so
 #android.copy_libs = 1
@@ -292,7 +286,7 @@ android.arch = armeabi-v7a
 # this is not the same as app version and should only be edited if you know what you're doing
 # android.numeric_version = 1
 
-<<<<<<< HEAD
+
 =======
 # (bool) enables Android auto backup feature (Android API >=23)
 android.allow_backup = True
