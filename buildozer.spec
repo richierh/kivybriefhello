@@ -31,8 +31,7 @@ source.include_exts = py,png,jpg,kv,atlas
 # comma separated e.g. requirements = sqlite3,kivy
 # requirements = python3,kivy
 
-requirements =python3, kivy==2.0.0,https://github.com/kivymd/KivyMD/archive/master.zip,pygments,sdl2_ttf==2.0.15,pillow,pyjnius
-
+requirements =python3, kivy==2.0.0,https://github.com/kivymd/KivyMD/archive/master.zip,pygments,sdl2_ttf==2.0.15,pillow,pyjnius,webview
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
@@ -217,8 +216,8 @@ android.logcat_filters = *:S python:D
 #android.copy_libs = 1
 
 # (str) The Android arch to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
-# android.arch = armeabi-v7a
-android.arch = x86
+android.arch = armeabi-v7a
+# android.arch = x86
 # (int) overrides automatic versionCode computation (used in build.gradle)
 # this is not the same as app version and should only be edited if you know what you're doing
 # android.numeric_version = 1
