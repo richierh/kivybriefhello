@@ -31,8 +31,10 @@ source.include_exts = py,png,jpg,kv,atlas
 # comma separated e.g. requirements = sqlite3,kivy
 # requirements = python3,kivy
 
-requirements =python3, kivy==2.0.0,https://github.com/kivymd/KivyMD/archive/master.zip,pygments,sdl2_ttf==2.0.15,pillow,pyjnius,webview
-# (str) Custom source folders for requirements
+requirements =python3, kivy==2.0.0,https://github.com/kivymd/KivyMD/archive/master.zip,pygments,sdl2_ttf==2.0.15,pillow,pyjnius,webview-android
+
+# (str) Custom source folders for requirementsp
+
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
 
