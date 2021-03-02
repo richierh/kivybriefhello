@@ -24,4 +24,4 @@ class MyWebApp(MDApp):
 
 
 if __name__ == '__main__':
-    MyWebApp().run
+    MyWebApp().run()
