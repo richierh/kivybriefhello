@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from kivy.uix.widget import Widget
 from kivymd.app import MDApp
 from webview import WebView
@@ -26,7 +25,6 @@ class MyWebApp(MDApp):
 
 if __name__ == '__main__':
     MyWebApp().run
-=======
 
 """
 My first application
@@ -49,4 +47,3 @@ def main():
     ap = MyApp()
     ap.run()
 main()
->>>>>>> 8d067adef7c052680413e8d1ed3c476c4efec361
