@@ -25,14 +25,7 @@ source.include_exts = py,png,jpg,kv,atlas
 #source.exclude_dirs = tests, bin
 
 # (list) List of exclusions using pattern matching
-#source.exclude_patterns = license,images/*/*.jpg
-
-# (str) Application versioning (method 1)
-version = 0.1
-
-# (str) Application versioning (method 2)
-# version.regex = __version__ = ['"](.*)['"]
-# version.filename = %(source.dir)s/main.py
+#source.exclude_patterns = license,images+1 408-412-3602s/main.py
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
@@ -125,7 +118,7 @@ android.private_storage = True
 # agreements. This is intended for automation only. If set to False,
 # the default, you will be shown the license when first running
 # buildozer.
- android.accept_sdk_license = True
+android.accept_sdk_license = True
 
 # (str) Android entry point, default is ok for Kivy-based app
 #android.entrypoint = org.renpy.android.PythonActivity
