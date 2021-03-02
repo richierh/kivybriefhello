@@ -119,6 +119,9 @@ android.private_storage = True
 # the default, you will be shown the license when first running
 # buildozer.
 android.accept_sdk_license = True
+# version.regex =
+# version.filename =
+version = 1.0
 
 # (str) Android entry point, default is ok for Kivy-based app
 #android.entrypoint = org.renpy.android.PythonActivity
